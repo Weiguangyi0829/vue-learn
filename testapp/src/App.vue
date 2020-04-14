@@ -1,12 +1,15 @@
 <template>
   <div id="app">
     Hello
+    <router-link to="/product">产品列表</router-link>
+    <router-link to="/order">订单列表</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
 }
 </script>
 

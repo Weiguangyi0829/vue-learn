@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import product from '@/components/product'
 
 Vue.use(Router)
 
@@ -9,7 +8,12 @@ export default new Router({
     {
       path: '/product',
       name: 'product',
-      component: product
+      component: () => import('@/components/product'),
+    },
+    {
+      path: '/order',
+      name: 'order',
+      component: () => import('@/components/order'),
     }
   ]
 })

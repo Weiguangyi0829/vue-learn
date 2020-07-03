@@ -1,6 +1,6 @@
 <template>
   <div class="tab">
-     <router-link to="/order">订单列表</router-link>
+    <button @click="gotoOrder">订单列表</button>
     <ul>
       <li v-for="product in products" :key="product.id">{{product.name}}</li>
     </ul>
@@ -18,6 +18,11 @@ export default {
         { id: "3", name: "ps4" }
       ]
     };
+  },
+  methods:{
+    gotoOrder(){
+      this.$router.push('/order')
+    }
   }
 };
 </script>

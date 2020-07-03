@@ -1,6 +1,7 @@
 <template>
     <div class="tab">
-        <router-link to="/product">产品列表</router-link>
+        <!-- <router-link to="/product">产品列表</router-link> -->
+        <button @click="goback">返回</button>
         订单信息
     </div>
 </template>
@@ -10,6 +11,11 @@ export default {
     name:'order',
     data(){
         return
+    },
+    methods:{
+        goback(){
+            this.$router.push('/')
+        }
     }
 }
 </script>

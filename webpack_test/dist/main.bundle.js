@@ -91,9 +91,20 @@
   !*** ./src/main.js ***!
   \*********************/
 /*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("const { add } =__webpack_require__(/*! ./utils/caculator */ \"./src/utils/caculator.js\");\r\n\r\nlet result = add(2,3);\r\nconsole.log(result);\r\n\r\nconsole.log('hello');\r\n\n\n//# sourceURL=webpack:///./src/main.js?");
+
+/***/ }),
+
+/***/ "./src/utils/caculator.js":
+/*!********************************!*\
+  !*** ./src/utils/caculator.js ***!
+  \********************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('hello');\r\n\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("function add(a,b){\r\n    return a + b;\r\n}\r\n\r\nmodule.exports ={\r\n    add\r\n}\n\n//# sourceURL=webpack:///./src/utils/caculator.js?");
 
 /***/ })
 

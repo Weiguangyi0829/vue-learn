@@ -1,14 +1,14 @@
-function createList(){
+function createList(n) {
     const ul = document.createElement('ul');
-    for (let i=0;i<name;i++){
-        let li =document.createElement('li');
+    for (let i = 0; i < n; i++) {
+        let li = document.createElement('li');
         li.innerHTML = i;
         ul.appendChild(li);
-    
- }
- return ul;
+
+    }
+    return ul;
 }
 
 module.exports = {
- createList
+    createList
 }

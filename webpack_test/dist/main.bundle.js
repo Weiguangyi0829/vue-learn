@@ -128,7 +128,7 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("function createList(){\r\n    const ul = document.createElement('ul');\r\n    for (let i=0;i<name;i++){\r\n        let li =document.createElement('li');\r\n        li.innerHTML = i;\r\n        ul.appendChild(li);\r\n    \r\n }\r\n return ul;\r\n}\r\n\r\nmodule.exports = {\r\n createList\r\n}\n\n//# sourceURL=webpack:///./src/components/list.js?");
+eval("function createList(n) {\r\n    const ul = document.createElement('ul');\r\n    for (let i = 0; i < n; i++) {\r\n        let li = document.createElement('li');\r\n        li.innerHTML = i;\r\n        ul.appendChild(li);\r\n\r\n    }\r\n    return ul;\r\n}\r\n\r\nmodule.exports = {\r\n    createList\r\n}\n\n//# sourceURL=webpack:///./src/components/list.js?");
 
 /***/ }),
 
@@ -139,7 +139,7 @@ eval("function createList(){\r\n    const ul = document.createElement('ul');\r\n
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const { add } =__webpack_require__(/*! ./utils/caculator */ \"./src/utils/caculator.js\");\r\nconst {createList}=__webpack_require__(/*! ./components/list */ \"./src/components/list.js\");\r\n__webpack_require__(/*! ./style.css */ \"./src/style.css\");\r\n\r\nlet result = add(2,3);\r\nconsole.log(result);\r\n\r\nlet ul = createList(10);\r\ndocument.body.appendChild(ul);\r\n\r\nconsole.log('hello');\r\n\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("const { add } = __webpack_require__(/*! ./utils/caculator */ \"./src/utils/caculator.js\");\r\nconst { createList } = __webpack_require__(/*! ./components/list */ \"./src/components/list.js\");\r\n__webpack_require__(/*! ./style.css */ \"./src/style.css\");\r\n\r\nlet result = add(2, 3);\r\nconsole.log(result);\r\n\r\nlet ul = createList(10);\r\ndocument.body.appendChild(ul);\r\n\r\nconsole.log('hello');\r\n\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ }),
 

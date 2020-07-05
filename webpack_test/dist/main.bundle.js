@@ -132,6 +132,18 @@ eval("function createList(n) {\r\n    const ul = document.createElement('ul');\r
 
 /***/ }),
 
+/***/ "./src/imgs/2.png":
+/*!************************!*\
+  !*** ./src/imgs/2.png ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"0f2fe625c68ffca53b4ce84ae3c8b904.png\");\n\n//# sourceURL=webpack:///./src/imgs/2.png?");
+
+/***/ }),
+
 /***/ "./src/main.js":
 /*!*********************!*\
   !*** ./src/main.js ***!
@@ -139,7 +151,7 @@ eval("function createList(n) {\r\n    const ul = document.createElement('ul');\r
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const { add } = __webpack_require__(/*! ./utils/caculator */ \"./src/utils/caculator.js\");\r\nconst { createList } = __webpack_require__(/*! ./components/list */ \"./src/components/list.js\");\r\n__webpack_require__(/*! ./style.css */ \"./src/style.css\");\r\n\r\nlet result = add(2, 3);\r\nconsole.log(result);\r\n\r\nlet ul = createList(10);\r\ndocument.body.appendChild(ul);\r\n\r\nconsole.log('hello');\r\n\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("const { add } = __webpack_require__(/*! ./utils/caculator */ \"./src/utils/caculator.js\");\r\nconst { createList } = __webpack_require__(/*! ./components/list */ \"./src/components/list.js\");\r\n__webpack_require__(/*! ./style.css */ \"./src/style.css\");\r\nconst logo = __webpack_require__(/*! ./imgs/2.png */ \"./src/imgs/2.png\");\r\n\r\nlet result = add(2, 3);\r\nconsole.log(result);\r\n\r\nlet ul = createList(10);\r\ndocument.body.appendChild(ul);\r\n\r\nlet img = document.createElement('img');\r\nimg.src = logo;\r\ndocument.body.appendChild(img)\r\n\r\nconsole.log('hello');\r\n\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ }),
 

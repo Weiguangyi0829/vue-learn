@@ -3,7 +3,7 @@ module.exports = {
     entry:'./src/main.js',
     output:{
         path:__dirname + '/dist',
-        filename:'main.bundle.js'
+        filename:'main.[hash].bundle.js'
         
     },
 
@@ -14,7 +14,7 @@ module.exports = {
                 use:['style-loader','css-loader']
             },
             {
-                test:/\.png$/g,
+                test:/\.(png|jpg|gif)$/g,
                 use:['file-loader']
             }
             

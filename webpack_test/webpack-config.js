@@ -1,19 +1,19 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-        polyfill:'./src/polyfill.js',//兼容性先执行
-        main:'./src/main.js',
-        
+        polyfill: './src/polyfill.js',//兼容性先执行
+        main: './src/main.js',
+
     },
     output: {
         path: __dirname + '/dist',
         filename: '[name].[hash].bundle.js'//name表示entry里的参数
 
     },
-    resolve:{
-        extensions:['.js','.css'] //不用写扩展名
+    resolve: {
+        extensions: ['.js', '.css'] //不用写扩展名
     },
 
     module: {
